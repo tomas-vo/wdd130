@@ -257,3 +257,360 @@ main {
   overflow-x: hidden;
 }
 
+
+
+/* ************************************************************CONTACT US STYLE************************************************************************************* */
+
+
+
+:root {
+  --primary-color: #2093a8; 
+  --secondary-color: #f4f4f4; 
+  --highlight-color: #f2a93b;
+  --accent-color: #555; 
+  --primary-color-rgb: 32, 147, 168;
+}
+
+body {
+  font-family: 'Roboto', sans-serif; 
+  margin: 0;
+  padding: 0;
+  background-color: var(--secondary-color);
+  color: var(--accent-color);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-box {
+  background-color: white;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  height: 400px; 
+  margin-bottom: 30px;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 10;
+}
+
+.hero-content h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  background-color: var(--primary-color);
+}
+
+.logo-container img {
+  width: 120px;
+  height: auto;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  color: var(--highlight-color);
+}
+
+
+main .contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  padding: 20px;
+}
+
+main .contact-container > section {
+  margin-bottom: 30px;
+}
+
+
+.contact-info-section {
+  padding-top: 15px;
+}
+
+.contact-info-section .section-title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-info-section .section-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 30px;
+}
+
+.contact-info-section .text-content {
+  width: 45%;
+
+}
+
+.contact-info-section .text-content a {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.contact-info-section .text-content a:hover {
+  color: var(--highlight-color);
+}
+
+.contact-info-section .section-image {
+  width: 45%;
+}
+
+.contact-info-section .map-responsive {
+  margin-top: 0;
+  overflow: hidden;
+  padding-bottom: 75%;
+  position: relative;
+  height: 0;
+  border-radius: 8px;
+}
+
+.contact-info-section .map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border-radius: 8px;
+}
+
+main .contact-container .company-info {
+  text-align: left;
+  max-width: 800px;
+  width: 100%;
+}
+
+
+.team-section .adventure-images.employee-profiles {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.team-section .adventure-images.employee-profiles figure {
+  width: 200px; 
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.team-section .adventure-images.employee-profiles figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.team-section .adventure-images.employee-profiles figcaption {
+  margin-top: 5px;
+  font-style: italic;
+  color: var(--accent-color);
+}
+
+
+.contact-form-section .section-content {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form-inner {
+  width: 100%;
+  max-width: 500px;
+  display: grid;
+  gap: 15px;
+}
+
+.contact-form-inner label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form-inner input[type="text"],
+.contact-form-inner input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.contact-form-inner textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+
+.contact-form-inner > div:nth-child(3) > p {
+  font-weight: bold; 
+  margin-bottom: 5px;
+}
+
+.contact-form-inner > div:nth-child(3) > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3px;
+}
+
+.contact-form-inner > div:nth-child(3) > div > input[type="radio"] {
+  margin-right: 5px;
+}
+
+.contact-form-inner > div:nth-child(3) > div > label {
+  font-weight: normal;
+}
+
+.contact-form-inner div:has(input[type="radio"]),
+.contact-form-inner div:has(input[type="checkbox"]) {
+  margin-bottom: 10px;
+  display: flex; 
+  align-items: center;
+}
+
+.contact-form-inner label[for="newsletter"] {
+  
+  margin-left: 6px; 
+}
+
+.contact-form-inner button[type="submit"] {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form-inner button[type="submit"]:hover {
+  background-color: var(--highlight-color);
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary-color);
+  padding: 20px 80px; 
+  color: white;
+  text-align: left;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 10px 0;
+}
+
+footer nav {
+  display: flex; 
+  justify-content: flex-end; 
+  gap: 15px; 
+}
+
+footer nav a {
+  margin-top: -3%;
+  color: white;
+  text-decoration: none;
+  font-size: 16px; 
+}
+
+footer nav a:hover {
+  color: var(--highlight-color); 
+}
+
+@media (min-width: 768px) {
+  main .contact-container {
+      align-items: stretch;
+  }
+
+  main .contact-container .company-info {
+      text-align: left;
+  }
+
+  main .contact-container .section-content.contact-info {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 30px;
+  }
+
+  main .contact-container .section-content.contact-info .text-content {
+      width: 50%;
+  }
+
+  main .contact-container .section-content.contact-info .section-image {
+      width: 50%;
+  }
+
+  main .contact-container .team-info {
+      text-align: center;
+  }
+
+  main .contact-container .employee-profiles {
+      justify-content: center;
+  }
+
+  .contact-form-section .section-content {
+      justify-content: center;
+  }
+}
+
