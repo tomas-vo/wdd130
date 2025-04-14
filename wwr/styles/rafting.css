@@ -614,3 +614,116 @@ footer nav a:hover {
   }
 }
 
+
+/* General Styles for Trips Page */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.section-box {
+  background-color: #FFFFFF;
+  padding: 20px;
+  width: 100%;
+  max-width: 900px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.section-content {
+  text-align: center;
+  font-size: 18px;
+  color: #333333;
+  line-height: 1.6;
+}
+
+/* Trip Options */
+.trip-options {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.trip {
+  width: 30%;
+  text-align: center;
+}
+
+.trip-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.trip h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.trip p {
+  font-size: 16px;
+  color: #555555;
+  margin-top: 10px;
+}
+
+/* Call to Action Section */
+.cta-section {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.cta-button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.cta-button:hover {
+  background-color: var(--highlight-color);
+}
+
+
