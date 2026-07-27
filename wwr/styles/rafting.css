@@ -1,5 +1,6 @@
-/* 1. Reset Universal */
-* {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,10 +14,9 @@ html {
 }
 
 :root {
-    --primary-color: #1493A8;
+    --primary-color: #0E7485;
     --secondary-color: #f4f4f4;
     --highlight-color: #0D636F;
-    /* FIX: Criterion 7 - Added a high-contrast accent color for hover states */
     --hover-accent-color: #FFE600;
 }
 
