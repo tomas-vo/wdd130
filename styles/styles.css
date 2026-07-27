@@ -1,33 +1,142 @@
-main {
-    max-width: 840px;
-}
-
-aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
-    text-align: center;
-}
-
-aside img {
-    width: 200px;
-    height: auto;
-}
-
-main img {
-    width: 150px;
-    height: auto;
-}
-
-p {
+/* --- ESTILOS GENERALES (Reset básico) --- */
+* {
+    box-sizing: border-box;
+    /* Importante para que los paddings no sumen ancho */
+    margin: 0;
     padding: 0;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    /* Una fuente limpia como la del ejemplo */
+    background-color: #fcfcfc;
+    /* Un fondo casi blanco */
+    color: #333;
+    line-height: 1.6;
+    /* Mejora la legibilidad del texto */
+}
+
+/* --- CONTENEDOR PRINCIPAL (Centrado a 840px) --- */
+header,
+.grid,
 footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
+    max-width: 840px;
+    margin: 20px auto;
+    /* Centra y da espacio arriba/abajo */
+    background-color: white;
+    /* Fondo blanco para el contenido */
+}
+
+/* --- HEADER Y NAVEGACIÓN (Estilo Xavier) --- */
+header {
+    background-color: #518cca;
+    /* El color azul de la referencia */
+    margin-bottom: 0;
+    /* Pega el header a la grilla */
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 0;
+}
+
+nav a {
+    display: block;
+    color: white;
+    /* Texto blanco en el menú */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Efecto sutil al pasar el mouse */
+}
+
+/* --- ESTRUCTURA DE GRILLA (.grid) --- */
+.grid {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    /* Columna fija para aside, el resto para main */
+    gap: 30px;
+    padding: 20px;
+    /* Espacio interno de la grilla */
+    margin-top: 0;
+    /* Pega la grilla al header */
+}
+
+/* --- ESTILOS DEL ASIDE (Columna Izquierda - Chile) --- */
+aside {
+    grid-column: 1;
+    grid-row: 1;
+    background-color: #f0f0f0;
+    /* Fondo gris claro */
+    border: 1px solid #ddd;
+    /* Borde sutil */
+    padding: 15px;
+}
+
+aside h2 {
+    color: #518cca;
+    /* Título azul */
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+aside img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* --- ESTILOS DEL MAIN (Columna Derecha) --- */
+main {
+    grid-column: 2;
+}
+
+main h1 {
+    color: #518cca;
+    /* Título azul */
+    border-bottom: 1px solid #ddd;
+    /* Línea gris delgada */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+/* --- LA MAGIA: Foto de perfil flotante --- */
+.profile-photo {
+    float: right;
+    /* ¡ESTO hace que el texto flote a la izquierda! */
+    width: 180px;
+    /* Tamaño controlado de tu foto */
+    height: auto;
+    margin-left: 20px;
+    /* Espacio entre el texto y la foto */
+    margin-bottom: 10px;
+    border: 8px solid white;
+    /* Borde blanco grueso */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra suave */
+}
+
+/* Limpiar el float para que no afecte a elementos futuros si los añades */
+main::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* --- FOOTER --- */
+footer {
     text-align: center;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    /* Línea divisoria superior */
+    color: #666;
+    font-size: 0.9rem;
 }
