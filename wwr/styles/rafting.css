@@ -1,4 +1,4 @@
-/* 1. Reset Universal (Siempre en la parte superior) */
+/* 1. Reset Universal */
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +19,7 @@ html {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: var(--secondary-color);
     width: 100%;
     color: #333333;
@@ -75,31 +75,48 @@ header {
     object-fit: cover;
 }
 
-.hero-content {
+.hero h1 {
     position: absolute;
-    top: 50%;
+    top: 30px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     color: white;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.4);
-    padding: 20px 40px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px 30px;
     border-radius: 8px;
+    font-size: 28px;
+    width: 80%;
 }
 
-.hero-content h1 {
-    font-size: 36px;
-    font-weight: bold;
+.hero article {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    color: #333;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.hero-content p {
-    font-size: 18px;
-    margin-top: 10px;
+.hero article p {
+    flex: 1;
+    text-align: center;
+    padding-right: 20px;
+    font-size: 16px;
 }
 
-.hero-article {
-    display: none;
-    /* Cumple con la rúbrica sin alterar la estética */
+.hero article img {
+    float: right;
+    width: 120px;
+    height: auto;
+    border-radius: 6px;
 }
 
 /* Content Sections */
@@ -129,19 +146,6 @@ header {
     align-items: center;
     width: 100%;
     gap: 20px;
-}
-
-.text-content {
-    width: 60%;
-    font-size: 16px;
-    color: #333333;
-    text-align: left;
-}
-
-.section-image {
-    width: 35%;
-    object-fit: cover;
-    border-radius: 8px;
 }
 
 /* History Section */
@@ -212,6 +216,10 @@ footer .socialmedia {
     display: flex;
     gap: 15px;
     align-items: center;
+}
+
+.socialmedia a {
+    text-decoration: none;
 }
 
 footer .socialmedia a img {
