@@ -1,38 +1,45 @@
-/* --- ESTILOS GENERALES (Reset básico) --- */
+/* 
+--------------------------------------------------
+--- ESTILOS GENERALES (Reset básico) ---
+--------------------------------------------------
 * {
     box-sizing: border-box;
-    /* Importante para que los paddings no sumen ancho */
+    /* Importante para que los paddings no sumen ancho * /
     margin: 0;
     padding: 0;
 }
 
 body {
     font-family: Arial, sans-serif;
-    /* Una fuente limpia como la del ejemplo */
+    /* Una fuente limpia como la del ejemplo * /
     background-color: #fcfcfc;
-    /* Un fondo casi blanco */
+    /* Un fondo casi blanco * /
     color: #333;
     line-height: 1.6;
-    /* Mejora la legibilidad del texto */
+    /* Mejora la legibilidad del texto * /
 }
 
-/* --- CONTENEDOR PRINCIPAL (Centrado a 840px) --- */
+--------------------------------------------------
+--- CONTENEDOR PRINCIPAL (Centrado a 840px) ---
+--------------------------------------------------
 header,
 .grid,
 footer {
     max-width: 840px;
     margin: 20px auto;
-    /* Centra y da espacio arriba/abajo */
+    /* Centra y da espacio arriba/abajo * /
     background-color: white;
-    /* Fondo blanco para el contenido */
+    /* Fondo blanco para el contenido * /
 }
 
-/* --- HEADER Y NAVEGACIÓN (Estilo Xavier) --- */
+--------------------------------------------------
+--- HEADER Y NAVEGACIÓN (Estilo Xavier) ---
+--------------------------------------------------
 header {
     background-color: #518cca;
-    /* El color azul de la referencia */
+    /* El color azul de la referencia * /
     margin-bottom: 0;
-    /* Pega el header a la grilla */
+    /* Pega el header a la grilla * /
 }
 
 nav {
@@ -45,7 +52,7 @@ nav {
 nav a {
     display: block;
     color: white;
-    /* Texto blanco en el menú */
+    /* Texto blanco en el menú * /
     text-decoration: none;
     font-weight: bold;
     padding: 10px 20px;
@@ -53,35 +60,39 @@ nav a {
 
 nav a:hover {
     background-color: rgba(255, 255, 255, 0.2);
-    /* Efecto sutil al pasar el mouse */
+    /* Efecto sutil al pasar el mouse * /
 }
 
-/* --- ESTRUCTURA DE GRILLA (.grid) --- */
+--------------------------------------------------
+--- ESTRUCTURA DE GRILLA (.grid) ---
+--------------------------------------------------
 .grid {
     display: grid;
     grid-template-columns: 280px 1fr;
-    /* Columna fija para aside, el resto para main */
+    /* Columna fija para aside, el resto para main * /
     gap: 30px;
     padding: 20px;
-    /* Espacio interno de la grilla */
+    /* Espacio interno de la grilla * /
     margin-top: 0;
-    /* Pega la grilla al header */
+    /* Pega la grilla al header * /
 }
 
-/* --- ESTILOS DEL ASIDE (Columna Izquierda - Chile) --- */
+--------------------------------------------------
+--- ESTILOS DEL ASIDE (Columna Izquierda - Chile) ---
+--------------------------------------------------
 aside {
     grid-column: 1;
     grid-row: 1;
     background-color: #f0f0f0;
-    /* Fondo gris claro */
+    /* Fondo gris claro * /
     border: 1px solid #ddd;
-    /* Borde sutil */
+    /* Borde sutil * /
     padding: 15px;
 }
 
 aside h2 {
     color: #518cca;
-    /* Título azul */
+    /* Título azul * /
     margin-bottom: 10px;
     font-size: 1.4rem;
 }
@@ -93,38 +104,183 @@ aside img {
     margin-bottom: 15px;
 }
 
-/* --- ESTILOS DEL MAIN (Columna Derecha) --- */
+--------------------------------------------------
+--- ESTILOS DEL MAIN (Columna Derecha) ---
+--------------------------------------------------
 main {
     grid-column: 2;
 }
 
 main h1 {
     color: #518cca;
-    /* Título azul */
+    /* Título azul * /
     border-bottom: 1px solid #ddd;
-    /* Línea gris delgada */
+    /* Línea gris delgada * /
     padding-bottom: 10px;
     margin-bottom: 20px;
     font-size: 1.8rem;
 }
 
-/* --- LA MAGIA: Foto de perfil flotante --- */
+--------------------------------------------------
+--- LA MAGIA: Foto de perfil flotante ---
+--------------------------------------------------
 .profile-photo {
     float: right;
-    /* ¡ESTO hace que el texto flote a la izquierda! */
+    /* ¡ESTO haces que el texto flote a la izquierda! * /
     width: 180px;
-    /* Tamaño controlado de tu foto */
+    /* Tamaño controlado de tu foto * /
     height: auto;
     margin-left: 20px;
-    /* Espacio entre el texto y la foto */
+    /* Espacio entre el texto y la foto * /
     margin-bottom: 10px;
     border: 8px solid white;
-    /* Borde blanco grueso */
+    /* Borde blanco grueso * /
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* Sombra suave */
+    /* Sombra suave * /
 }
 
-/* Limpiar el float para que no afecte a elementos futuros si los añades */
+/* Limpiar el float para que no afecte a elementos futuros si los añades * /
+main::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+--------------------------------------------------
+--- FOOTER ---
+--------------------------------------------------
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    /* Línea divisoria superior * /
+    color: #666;
+    font-size: 0.9rem;
+}
+*/
+
+/* --- ESTILOS GENERALES (Reset básico) --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fcfcfc;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Regla requerida para p */
+p {
+    padding: 0;
+}
+
+/* --- CONTENEDOR PRINCIPAL (Centrado a 840px) --- */
+header,
+.grid,
+footer {
+    max-width: 840px;
+    margin: 20px auto;
+    background-color: white;
+}
+
+/* --- HEADER Y NAVEGACIÓN --- */
+header {
+    background-color: #518cca;
+    margin-bottom: 0;
+}
+
+nav {
+    background-color: #518cca;
+    /* Agregado explícitamente para cumplir la rúbrica */
+    padding: 10px 0;
+    /* Asegura padding en nav */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* --- ESTRUCTURA DE GRILLA (.grid) --- */
+.grid {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 30px;
+    padding: 20px;
+    margin-top: 0;
+}
+
+/* --- ESTILOS DEL ASIDE (Columna Izquierda - Chile) --- */
+aside {
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+    /* Asegura width declarado explícitamente */
+    margin: 0;
+    /* Asegura margin declarado explícitamente */
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 15px;
+    color: #333;
+    /* Asegura color declarado explícitamente */
+}
+
+aside h2 {
+    color: #518cca;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+/* Rúbrica exige aside img con width: 200px y height: auto */
+aside img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* --- ESTILOS DEL MAIN (Columna Derecha) --- */
+main {
+    grid-column: 2;
+    max-width: 100%;
+    /* Cumple con max-width en main */
+}
+
+main h1 {
+    color: #518cca;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+/* Regla requerida main img (se aplica a la foto de perfil en main) */
+main img {
+    width: 180px;
+    height: auto;
+    border: 8px solid white;
+    padding: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+/* Limpiar el float */
 main::after {
     content: "";
     display: table;
@@ -133,10 +289,11 @@ main::after {
 
 /* --- FOOTER --- */
 footer {
+    margin-top: 20px;
+    /* Agregado para cumplir la rúbrica */
+    border-top: 1px solid #ddd;
     text-align: center;
     padding: 20px;
-    border-top: 1px solid #ddd;
-    /* Línea divisoria superior */
     color: #666;
     font-size: 0.9rem;
 }
