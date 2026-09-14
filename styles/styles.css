@@ -178,7 +178,7 @@ p {
     padding: 0;
 }
 
-/* --- CONTENEDOR PRINCIPAL (Centrado a 840px) --- */
+/* --- CONTENEDOR PRINCIPAL --- */
 header,
 .grid,
 footer {
@@ -195,12 +195,10 @@ header {
 
 nav {
     background-color: #518cca;
-    /* Agregado explícitamente para cumplir la rúbrica */
-    padding: 10px 0;
-    /* Asegura padding en nav */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    padding: 10px 0;
 }
 
 nav a {
@@ -224,19 +222,14 @@ nav a:hover {
     margin-top: 0;
 }
 
-/* --- ESTILOS DEL ASIDE (Columna Izquierda - Chile) --- */
+/* --- ESTILOS DEL ASIDE (según guía W02) --- */
 aside {
-    grid-column: 1;
-    grid-row: 1;
-    width: 100%;
-    /* Asegura width declarado explícitamente */
-    margin: 0;
-    /* Asegura margin declarado explícitamente */
-    background-color: #f0f0f0;
-    border: 1px solid #ddd;
-    padding: 15px;
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+    background-color: #eee;
     color: #333;
-    /* Asegura color declarado explícitamente */
 }
 
 aside h2 {
@@ -245,7 +238,6 @@ aside h2 {
     font-size: 1.4rem;
 }
 
-/* Rúbrica exige aside img con width: 200px y height: autoo */
 aside img {
     width: 200px;
     height: auto;
@@ -253,11 +245,9 @@ aside img {
     margin-bottom: 15px;
 }
 
-/* --- ESTILOS DEL MAIN (Columna Derecha) --- */
+/* --- ESTILOS DEL MAIN --- */
 main {
-    grid-column: 2;
-    max-width: 100%;
-    /* Cumple con max-width en main */
+    max-width: 840px;
 }
 
 main h1 {
@@ -268,9 +258,9 @@ main h1 {
     font-size: 1.8rem;
 }
 
-/* Regla requerida main img (se aplica a la foto de perfil en main) */
+/* Regla requerida main img con ancho de 150px-180px o el de tu foto */
 main img {
-    width: 180px;
+    width: 150px;
     height: auto;
     border: 8px solid white;
     padding: 0;
@@ -287,11 +277,10 @@ main::after {
     clear: both;
 }
 
-/* --- FOOTER --- */
+/* --- FOOTER (según guía W02) --- */
 footer {
-    margin-top: 20px;
-    /* Agregado para cumplir la rúbrica */
-    border-top: 1px solid #ddd;
+    margin-top: 15px;
+    border-top: 1px solid #000;
     text-align: center;
     padding: 20px;
     color: #666;
