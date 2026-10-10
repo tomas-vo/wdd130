@@ -378,31 +378,62 @@ footer .socialmedia img {
 /* ===================================
    3. GRID CONTENT (index.html)
    =================================== */
+/* ===================================
+   GRID CONTENT (index.html)
+   =================================== */
 .home-grid {
-    margin: 2rem 0;
+    margin: 2rem auto;
+    max-width: 1000px;
+    padding: 0 1rem;
 }
 
 .home-grid h2 {
-    color: var(--primary-color);
     text-align: center;
+    color: #05445E;
+    /* Ajusta a tu color primario */
     margin-bottom: 1.5rem;
 }
 
-.home-grid .grid-item {
+/* Distribución en dos columnas en pantallas grandes */
+.home-grid {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
-    align-items: center;
-    margin-bottom: 1.5rem;
-    background-color: var(--secondary-color);
-    padding: 1rem;
-    border-radius: 6px;
 }
 
-.home-grid img {
+.home-grid > h2 {
+    grid-column: 1 / -1;
+    /* El título principal ocupa toda la fila arriba */
+}
+
+.grid-item {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.grid-item img {
     width: 100%;
-    height: auto;
+    max-height: 220px;
+    object-fit: cover;
     border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+.grid-text h3 {
+    margin-top: 0;
+    color: #189AB4;
+    /* Ajusta a tu color secundario */
+}
+
+.grid-text p {
+    margin-bottom: 0;
+    line-height: 1.5;
 }
 
 /* ===================================
