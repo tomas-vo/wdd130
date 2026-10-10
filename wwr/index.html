@@ -4,85 +4,81 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>White Water Rafting | Trips</title>
+    <title>White Water Rafting | Home</title>
     <meta name="description"
-      content="Explore our available white water rafting trips, compare trip details, and contact us to book your adventure.">
+      content="Welcome to White Water Rafting Adventures. Explore our exciting river rafting trips, learn about our mission, and sign up for our newsletter.">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
     <header>
-        <!-- Asegúrate de tener aquí el mismo <header> y <nav> que en contact.html -->
+        <img src="images/logo.png" alt="Rafting Company Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
     </header>
 
     <main>
-        <h1>Our Rafting Trips</h1>
-
-        <section class="cta-trips">
-            <h2>Have Questions or Ready to Book?</h2>
-            <a href="contact.html" class="cta-button">Contact Us Now</a>
-        </section>
-
-        <div class="trips-container">
-            <article class="trip-card">
-                <img src="images/trip1.jpg" alt="Beginner Rafting Trip">
-                <h2>Family Splash Run</h2>
-                <p>A fun and easy rafting route perfect for families and beginners looking for
-                    scenic views.</p>
-            </article>
-
-            <article class="trip-card">
-                <img src="images/trip2.jpg" alt="Intermediate Rafting Trip">
-                <h2>Canyon Challenge</h2>
-                <p>Medium intensity rapids designed for thrill-seekers with basic rafting
-                    experience.</p>
-            </article>
-
-            <article class="trip-card">
-                <img src="images/trip3.jpg" alt="Advanced Rafting Trip">
-                <h2>Extreme Rapids Expedition</h2>
-                <p>An intense, full-day rafting journey through class IV-V rapids for experienced
-                    paddlers.</p>
+        <div class="hero">
+            <img src="images/hero-home.jpg" alt="Rafting team navigating mountain river rapids">
+            <h1>White Water Rafting Adventures</h1>
+            <article>
+                <h2>Experience the Thrill</h2>
+                <p>Join us for unforgettable whitewater rafting trips designed for all skill levels.
+                    Safety, fun, and nature combined!</p>
             </article>
         </div>
 
-        <section class="trips-table-section">
-            <h2>Trip Summary Comparison</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Trip Name</th>
-                        <th>Duration</th>
-                        <th>Difficulty</th>
-                        <th>Price</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Family Splash Run</td>
-                        <td>2 Hours</td>
-                        <td>Class I-II</td>
-                        <td>$45</td>
-                    </tr>
-                    <tr>
-                        <td>Canyon Challenge</td>
-                        <td>Half Day</td>
-                        <td>Class III</td>
-                        <td>$75</td>
-                    </tr>
-                    <tr>
-                        <td>Extreme Rapids Expedition</td>
-                        <td>Full Day</td>
-                        <td>Class IV-V</td>
-                        <td>$120</td>
-                    </tr>
-                </tbody>
-            </table>
+        <section class="cta-home">
+            <h2>Ready for Your Next Adventure?</h2>
+            <p>Check out our featured rafting trips and find the perfect package for you and your
+                family.</p>
+            <a href="trips.html" class="cta-button">View Our Trips</a>
+        </section>
+
+        <section class="home-grid">
+            <h2>Our Purpose and Offerings</h2>
+            <div class="grid-item">
+                <img src="images/offering1.jpg" alt="Professional rafting guide with equipment">
+                <h3>Expert Guides & Top Safety</h3>
+                <p>Our certified guides ensure that every expedition is safe, exciting, and
+                    educational for every member of your group.</p>
+            </div>
+            <div class="grid-item">
+                <img src="images/offering2.jpg" alt="Rafters enjoying river scenery">
+                <h3>Unforgettable Landscapes</h3>
+                <p>Explore hidden canyons, breathtaking river bends, and pristine natural
+                    surroundings on every guided run.</p>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <h2>Subscribe to Our Newsletter</h2>
+            <form action="#" method="post">
+                <div class="form-item">
+                    <label for="fname">Full Name:</label>
+                    <input type="text" id="fname" name="fname" required>
+                </div>
+                <div class="form-item">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <button type="submit">Join the Adventure</button>
+            </form>
         </section>
     </main>
 
     <footer>
-        <!-- Asegúrate de tener aquí el mismo <footer> que en contact.html -->
+        <p>&copy; 2026 White Water Rafting | Tomás</p>
+        <nav class="sociallinks">
+            <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook Icon"></a>
+            <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter Icon"></a>
+            <a href="https://instagram.com"><img src="images/instagram.png"
+                  alt="Instagram Icon"></a>
+        </nav>
     </footer>
 </body>
 
