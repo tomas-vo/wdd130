@@ -278,17 +278,16 @@ footer .socialmedia img {
     margin-bottom: 2rem;
 }
 
-.hero img {
+.hero > img {
     width: 100%;
-    height: auto;
+    height: 500px;
     display: block;
     object-fit: cover;
-    max-height: 500px;
 }
 
 .hero h1 {
     position: absolute;
-    top: 50%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #ffffff;
@@ -299,6 +298,30 @@ footer .socialmedia img {
     border-radius: 8px;
     font-size: 1.8rem;
     border-bottom: none;
+}
+
+.hero-article {
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #ffffff;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    width: 75%;
+}
+
+.hero-article img {
+    display: none;
+    /* Oculta cualquier imagen interna extra si quedara en el HTML */
+}
+
+.hero-article p {
+    margin: 0;
+    color: #ffffff;
+    font-size: 1rem;
 }
 
 /* ===================================
